@@ -1,0 +1,2527 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google" content="notranslate" />
+    <title>Produto - Quiosques Pink</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo-quiosques-pink.png" />
+    <link rel="stylesheet" href="css/W8gQZsNWpT6p.css" />
+    <style>
+      :root {
+        --pink: #ff0080;
+        --pink-2: #ff4aa4;
+        --pink-soft: #ffe3f1;
+        --text: #1f1f1f;
+        --muted: #6b6b6b;
+        --bg: #ffffff;
+        --card: #ffffff;
+        --line: #ececec;
+        --shadow: 0 10px 30px rgba(15, 15, 15, 0.08);
+        --radius: 18px;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        padding-bottom: 92px; /* espaço para o CTA fixo */
+      }
+
+      .container {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .promo-bar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: var(--pink);
+        color: #fff;
+      }
+
+      .promo-bar .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px 12px;
+        flex-wrap: wrap;
+      }
+
+      .promo-bar .label {
+        font-size: 14px;
+        opacity: 0.95;
+      }
+
+      .timer {
+        display: inline-flex;
+        align-items: end;
+        gap: 10px;
+      }
+
+      .timer .unit {
+        display: grid;
+        gap: 2px;
+        justify-items: center;
+      }
+
+      .timer .box {
+        min-width: 36px;
+        height: 28px;
+        display: grid;
+        place-items: center;
+        background: #fff;
+        color: var(--pink);
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1;
+      }
+
+      .timer .caption {
+        font-size: 10px;
+        opacity: 0.95;
+        line-height: 1;
+      }
+
+      .site-header {
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .site-header .row {
+        display: grid;
+        grid-template-columns: 44px 1fr 88px;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 0;
+      }
+
+      .icon-btn {
+        width: 44px;
+        height: 44px;
+        border: 0;
+        background: transparent;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        color: #2a2a2a;
+      }
+
+      .icon-btn[disabled] {
+        cursor: default;
+        opacity: 1;
+        pointer-events: none;
+      }
+
+      .brand {
+        display: grid;
+        place-items: center;
+        gap: 4px;
+        text-align: center;
+      }
+
+      .brand .logo {
+        height: 28px;
+        width: auto;
+        display: block;
+      }
+
+      .right-icons {
+        display: flex;
+        justify-content: end;
+        gap: 4px;
+      }
+
+      .page {
+        padding: 16px 0 24px;
+      }
+
+      .product-media {
+        background: #fff;
+        border-radius: var(--radius);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        padding: 18px;
+      }
+
+      .product-media img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 14px;
+        background: #fff;
+      }
+
+      .viewing {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 4px 4px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .viewing strong {
+        color: var(--text);
+      }
+
+      .title {
+        margin: 10px 0 0;
+        font-size: 30px;
+        line-height: 1.1;
+        color: var(--pink);
+        letter-spacing: -0.02em;
+      }
+
+      .primary-cta {
+        margin-top: 14px;
+      }
+
+      .btn-buy {
+        width: 100%;
+        border: 0;
+        border-radius: 12px;
+        padding: 14px 16px;
+        font-weight: 700;
+        font-size: 18px;
+        background: var(--pink);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 12px 26px rgba(255, 0, 128, 0.22);
+        transition: transform 120ms ease, box-shadow 180ms ease, filter 180ms ease;
+      }
+
+      .btn-buy:hover {
+        filter: brightness(1.02);
+        box-shadow: 0 14px 30px rgba(255, 0, 128, 0.28);
+      }
+
+      .btn-buy:active {
+        transform: translateY(1px);
+      }
+
+      .section {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+      }
+
+      .section h2 {
+        font-size: 18px;
+        line-height: 1.2;
+        color: #2a2a2a;
+        margin-bottom: 10px;
+      }
+
+      .features {
+        display: grid;
+        gap: 8px;
+        padding-left: 18px;
+        color: #2a2a2a;
+      }
+
+      .features li {
+        font-size: 14px;
+        color: #2a2a2a;
+      }
+
+      .desc p {
+        font-size: 14px;
+        color: #2a2a2a;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .section.desc > h2 {
+        display: none;
+      }
+
+      .tabs {
+        margin-top: 6px;
+      }
+
+      .tabs-nav {
+        display: flex;
+        gap: 22px;
+        border-bottom: 1px solid var(--line);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .tabs-nav button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        padding: 12px 2px 10px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #6b6b6b;
+        cursor: pointer;
+        position: relative;
+        white-space: nowrap;
+      }
+
+      .tabs-nav button.is-active {
+        color: var(--pink);
+      }
+
+      .tabs-nav button.is-active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 2px;
+        background: var(--pink);
+        border-radius: 2px;
+      }
+
+      .tabs-panel {
+        padding-top: 12px;
+      }
+
+      .tabs-panel[hidden] {
+        display: none;
+      }
+
+      .tab-item {
+        margin-bottom: 14px;
+      }
+
+      .tab-item strong {
+        color: #111;
+      }
+
+      .tab-item p {
+        margin-top: 6px;
+        margin-bottom: 0;
+      }
+
+      .tab-block {
+        margin-bottom: 14px;
+      }
+
+      .tab-block h4 {
+        margin: 0 0 8px;
+        font-size: 14px;
+        font-weight: 800;
+        color: #111;
+      }
+
+      .tab-block .line {
+        font-size: 14px;
+        color: #2a2a2a;
+        line-height: 1.6;
+      }
+
+      .combo-wrap {
+        background: #fafafa;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 14px;
+      }
+
+      .combo-title {
+        font-weight: 700;
+        font-size: 14px;
+        color: #2a2a2a;
+        margin-bottom: 10px;
+      }
+
+      .combo-grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .combo-card {
+        display: grid;
+        grid-template-columns: 56px 1fr 44px;
+        gap: 12px;
+        align-items: center;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 12px;
+        cursor: pointer;
+        transition: box-shadow 180ms ease, border-color 180ms ease, transform 180ms ease;
+      }
+
+      .combo-card img {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      .combo-card .name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #2a2a2a;
+        line-height: 1.2;
+        margin-bottom: 4px;
+      }
+
+      .combo-card .sub {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .combo-card .check {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        border: 2px solid var(--line);
+        display: grid;
+        place-items: center;
+        color: transparent;
+        background: #fff;
+        font-weight: 900;
+      }
+
+      .combo-card.is-selected {
+        border-color: rgba(255, 0, 128, 0.28);
+        box-shadow: 0 10px 24px rgba(255, 0, 128, 0.10);
+        transform: scale(1.01);
+      }
+
+      .combo-card:active {
+        transform: scale(0.99);
+      }
+
+      .combo-card.is-selected .check {
+        border-color: var(--pink);
+        background: var(--pink);
+        color: #fff;
+      }
+
+      .combo-plus {
+        display: grid;
+        place-items: center;
+        height: 24px;
+      }
+
+      .combo-plus .circle {
+        width: 26px;
+        height: 26px;
+        border-radius: 99px;
+        border: 1px solid var(--line);
+        background: #fff;
+        display: grid;
+        place-items: center;
+        color: #777;
+        font-weight: 900;
+      }
+
+      .flash-pill {
+        margin-top: 14px;
+        width: 100%;
+        border: 0;
+        border-radius: 999px;
+        background: var(--pink);
+        color: #fff;
+        padding: 14px 16px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .flash-pill .price {
+        font-weight: 900;
+      }
+
+      .rating {
+        text-align: center;
+        padding: 10px 0 0;
+      }
+
+      .rating .score {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1;
+        margin-top: 6px;
+        color: #2a2a2a;
+      }
+
+      .rating .subtitle {
+        margin-top: 8px;
+        font-size: 12px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .stars {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        align-items: center;
+        font-size: 14px;
+        color: #2a2a2a;
+      }
+
+      .stars .star {
+        color: #f7b500;
+        font-size: 14px;
+      }
+
+      .recommend {
+        margin-top: 8px;
+        color: #1a8f42;
+        font-weight: 700;
+        font-size: 13px;
+      }
+
+      .reviews {
+        margin-top: 18px;
+        text-align: left;
+      }
+
+      .reviews h3 {
+        margin: 14px 0 10px;
+        font-size: 18px;
+        color: #2a2a2a;
+        letter-spacing: -0.01em;
+      }
+
+      .review-item {
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .review-item:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .review-text {
+        font-size: 14px;
+        color: #2a2a2a;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .review-recommend {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--pink);
+        margin-bottom: 6px;
+      }
+
+      .review-meta {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .newsletter {
+        background: var(--pink-soft);
+        border-radius: var(--radius);
+        padding: 16px;
+        border: 1px solid rgba(255, 0, 128, 0.12);
+      }
+
+      .newsletter p {
+        font-size: 13px;
+        color: #2a2a2a;
+        line-height: 1.45;
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .newsletter .row {
+        display: grid;
+        grid-template-columns: 1fr 88px;
+        gap: 10px;
+      }
+
+      .newsletter input {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px 12px;
+      }
+
+      .newsletter button {
+        border: 0;
+        border-radius: 12px;
+        background: var(--pink);
+        color: #fff;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      .sticky-cta {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 80;
+        background: rgba(255, 255, 255, 0.86);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--line);
+        padding: 12px 0;
+      }
+
+      .sticky-cta .container {
+        padding: 0 16px;
+      }
+
+      .sticky-cta.is-hidden {
+        display: none;
+      }
+
+      .footer {
+        margin-top: 18px;
+        padding: 18px 0 10px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .footer-logo {
+        display: grid;
+        place-items: center;
+      }
+
+      .footer-logo img {
+        height: 22px;
+        width: auto;
+        display: block;
+      }
+
+      @keyframes pageIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      main.page {
+        animation: pageIn 260ms ease both;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        main.page {
+          animation: none;
+        }
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="promo-bar" role="region" aria-label="Promoção e contagem regressiva">
+      <div class="container">
+        <div class="row">
+          <div class="label">Promoção encerra em:</div>
+          <div class="timer" aria-live="polite">
+            <div class="unit">
+              <div class="box" data-timer="hours">00</div>
+              <div class="caption">Horas</div>
+            </div>
+            <div class="unit">
+              <div class="box" data-timer="minutes">00</div>
+              <div class="caption">Minutos</div>
+            </div>
+            <div class="unit">
+              <div class="box" data-timer="seconds">00</div>
+              <div class="caption">Segundos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="row">
+          <button class="icon-btn" id="backButton" type="button" aria-label="Voltar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="brand" aria-label="Quiosques Pink">
+            <img class="logo" src="images/logo-quiosques-pink.png" alt="Quiosques Pink" />
+          </div>
+
+          <div class="right-icons">
+            <button class="icon-btn" type="button" aria-label="Minha conta">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5Zm0 2c-4.418 0-8 2.239-8 5v2h16v-2c0-2.761-3.582-5-8-5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button class="icon-btn" type="button" aria-label="Carrinho" disabled aria-disabled="true" tabindex="-1">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M7 18c-1.105 0-1.99.895-1.99 2S5.895 22 7 22s2-.895 2-2-.895-2-2-2Zm10 0c-1.105 0-1.99.895-1.99 2S15.895 22 17 22s2-.895 2-2-.895-2-2-2ZM7.17 14h9.66c.75 0 1.4-.41 1.74-1.03L21 7H6.21L5.27 4.5A1.5 1.5 0 0 0 3.86 3H2v2h1.86l3.6 9.59A2 2 0 0 0 7.17 14Zm-.96-5h12.19l-1.73 3H7.33L6.21 9Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <section aria-label="Produto">
+          <div class="product-media">
+            <img id="productImage" src="images/kit-body-scrub-fatal-black-hydracare.png" alt="Imagem do produto" />
+          </div>
+
+          <div class="viewing" aria-label="Pessoas vendo este produto agora">
+            <span aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 5c5.5 0 9.5 5 9.5 7s-4 7-9.5 7S2.5 14 2.5 12 6.5 5 12 5Zm0 2C7.9 7 4.7 10.6 4.7 12S7.9 17 12 17s7.3-3.4 7.3-5S16.1 7 12 7Zm0 2.2A2.8 2.8 0 1 1 9.2 12 2.8 2.8 0 0 1 12 9.2Z"
+                  fill="currentColor"
+                  opacity="0.75"
+                />
+              </svg>
+            </span>
+            <div><strong id="viewingCount">50</strong> pessoas estão vendo este produto agora</div>
+          </div>
+
+          <h1 class="title" id="productTitle">Kit Body Scrub + Fatal Black + HydraCare + Brinde Surpresa</h1>
+
+          <div class="primary-cta" id="primaryCtaSlot">
+            <button class="btn-buy" id="buyButtonTop" type="button">COMPRAR AGORA</button>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Características">
+          <h2>Características</h2>
+          <ul class="features" id="featureList">
+            <li>Kit completo com itens selecionados</li>
+            <li>Perfeito para presentear</li>
+            <li>Envio rápido e seguro</li>
+          </ul>
+        </section>
+
+        <section class="section desc" aria-label="Descrição">
+          <h2>Descrição</h2>
+          <div id="productDescription">
+            <p>
+              Este é um modelo (demo) da página de produto. A ideia é manter o visual rosa, imagem grande, prova social e um botão de compra sempre
+              visível.
+            </p>
+            <p>
+              Você pode abrir esta página com parâmetros na URL para trocar nome/preço/imagem, por exemplo:
+              <span class="sr-only">Exemplo: produto.html?p=demo</span>
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="comboSection" aria-label="Oferta especial" style="display: none;">
+          <h2>Oferta especial</h2>
+          <div class="combo-wrap">
+            <div class="combo-title" id="comboHeadline">Escolha seu combo</div>
+            <div class="combo-grid" role="group" aria-label="Itens do combo">
+              <div class="combo-card" data-combo="0" role="button" tabindex="0" aria-pressed="false">
+                <img id="comboImg0" src="images/HGr6KKX1Cs7G.jpg" alt="" />
+                <div>
+                  <div class="name" id="comboName0">Kit 1 Perfume + 4 Body Splashes</div>
+                  <div class="sub">A partir de <strong id="comboFrom0">R$ 79,90</strong></div>
+                </div>
+                <div class="check" aria-hidden="true">✓</div>
+              </div>
+
+              <div class="combo-plus" aria-hidden="true">
+                <div class="circle">+</div>
+              </div>
+
+              <div class="combo-card is-selected" data-combo="1" role="button" tabindex="0" aria-pressed="true">
+                <img id="comboImg1" src="images/roupao.jpg" alt="" />
+                <div>
+                  <div class="name" id="comboName1">Kit de Skin Care completo + Roupão Exclusivo</div>
+                  <div class="sub">A partir de <strong id="comboFrom1">R$ 94,89</strong></div>
+                </div>
+                <div class="check" aria-hidden="true">✓</div>
+              </div>
+            </div>
+
+            <button class="flash-pill" id="flashDealButton" type="button" aria-label="Preço relâmpago">
+              <span aria-hidden="true">⚡</span>
+              <span id="flashDealText">PREÇO RELÂMPAGO: Leve os 2 por</span>
+              <span class="price">R$ <span id="flashDealPrice">94,89</span></span>
+            </button>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Avaliações">
+          <h2>Avaliações</h2>
+          <div class="rating">
+            <div class="score"><span id="ratingScore">5.0</span>/<span id="ratingMax">5</span></div>
+            <div class="subtitle">NOTA DO PRODUTO</div>
+            <div class="stars" aria-label="Avaliação em estrelas">
+              <span><strong id="ratingAvgText">4.4</strong> de 5</span>
+              <span aria-hidden="true">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </span>
+              <span>(<span id="ratingCount">14.272</span>)</span>
+            </div>
+            <div class="recommend"><span id="recommendPct">94%</span> dos clientes recomendam este produto</div>
+          </div>
+
+          <div class="reviews" aria-label="Avaliações mais recentes">
+            <h3>Avaliações mais recentes</h3>
+            <div id="recentReviews"></div>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Newsletter">
+          <div class="newsletter">
+            <p>Receba dicas e novidades toda semana no seu e-mail</p>
+            <div class="row">
+              <input type="email" inputmode="email" autocomplete="email" placeholder="Digite seu e-mail" aria-label="E-mail" />
+              <button type="button">Enviar</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer">
+          <div class="footer-logo" aria-label="Quiosques Pink">
+            <img src="images/logo-quiosques-pink.png" alt="Quiosques Pink" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="sticky-cta" id="stickyCta" role="region" aria-label="Comprar">
+      <div class="container">
+        <button class="btn-buy" id="buyButtonSticky" type="button">Comprar por R$ <span id="productPriceSticky">91,83</span></button>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const pid = params.get("pid") || "";
+        const backBtn = document.getElementById("backButton");
+        if (backBtn) {
+          backBtn.addEventListener("click", function () {
+            if (window.history.length > 1) {
+              window.history.back();
+            } else {
+              window.location.href = "index.html";
+            }
+          });
+        }
+
+        const formatBRL = (value) => {
+          const normalized = String(value ?? "")
+            .trim()
+            .replace(/[^\d,\.]/g, "")
+            .replace(".", ",");
+          return normalized.length ? normalized : "0,00";
+        };
+
+        const byId = (id) => document.getElementById(id);
+
+        const catalog = {
+          demo: {
+            title: "Kit Body Scrub + Fatal Black + HydraCare + Brinde Surpresa",
+            price: "91,83",
+            image: "images/kit-body-scrub-fatal-black-hydracare.png",
+            features: ["Kit completo com itens selecionados", "Perfeito para presentear", "Envio rápido e seguro"],
+            description: [
+              "Este kit foi montado para momentos especiais e para elevar sua rotina de autocuidado.",
+              "Aqui entra a descrição completa do produto (itens do kit, benefícios e modo de uso).",
+            ],
+            comboDeal: null,
+          },
+          relampago: {
+            title: "Kit de Skin Care completo + Roupão Exclusivo",
+            price: "79,90",
+            image: "images/roupao.jpg",
+            features: ["Oferta por tempo limitado", "Produtos selecionados", "Condições especiais no combo"],
+            description: [
+              "Alguns produtos terão o bloco de combo + preço relâmpago (como no seu protótipo).",
+              "Você pode ajustar os textos e itens do combo conforme seus produtos reais.",
+            ],
+            comboDeal: {
+              headline: "Escolha seu combo",
+              totalPrice: "94,89",
+              items: [
+                { title: "Kit 1 Perfume + 4 Body Splashes", fromPrice: "79,90", image: "images/HGr6KKX1Cs7G.jpg" },
+                { title: "Kit de Skin Care completo + Roupão Exclusivo", fromPrice: "94,89", image: "images/roupao.jpg" },
+              ],
+            },
+          },
+        };
+
+        const productKey = params.get("p") || "demo";
+        const product = catalog[productKey] || catalog.demo;
+
+        const overrideTitle = params.get("title");
+        const overridePrice = params.get("price");
+        const overrideImage = params.get("img");
+
+        const placeholderCheckout = "https://naotem.com";
+        const checkoutByPid = {
+          "kit-1-perfume-4-bodysplashes": "https://www.seguropagamentos.com.br/we1",
+          "kit-1-perfume-4-body-splashes": "https://www.seguropagamentos.com.br/we1",
+          "kit-5-body-splash-vanilla-edia-a-o-limitada-a-wepink": "https://www.seguropagamentos.com.br/we2",
+          "kit-5-body-splash-vanilla-edicao-limitada": "https://www.seguropagamentos.com.br/we2",
+          "kit-5-body-splash-vanilla-edicao-limitada-wepink": "https://www.seguropagamentos.com.br/we2",
+          "kit-5-body-splashes-vanilla": "https://www.seguropagamentos.com.br/we2",
+          "kit-body-scrub-fatal-black-hydracare": "https://www.seguropagamentos.com.br/we3",
+          "kit-body-scrub-fatal-black-hydracare-brinde": "https://www.seguropagamentos.com.br/we3",
+          "kit-obsessed-heaven-pra-black-friday": "https://www.seguropagamentos.com.br/we4",
+          "kit-obsessed-heaven": "https://www.seguropagamentos.com.br/we4",
+          "kit-obsessed-one-touch": "https://www.seguropagamentos.com.br/we5",
+          "kit-obsessed-fatal-rouge": "https://www.seguropagamentos.com.br/we6",
+          "obsessed-desodorante-cola-nia-100ml": "https://www.seguropagamentos.com.br/we7",
+          "obsessed-desodorante-colonia-100ml": "https://www.seguropagamentos.com.br/we7",
+          "3x-obsessed-desodorante-cola-nia-100ml": "https://www.seguropagamentos.com.br/we7",
+          "3x-obsessed-desodorante-colonia-100ml": "https://www.seguropagamentos.com.br/we7",
+          "kit-the-sunny-vf-pink": "https://www.seguropagamentos.com.br/we8",
+          "kit-the-sunny-the-lover": "https://www.seguropagamentos.com.br/we9",
+          "kit-the-sunny-perfect-pear": "https://www.seguropagamentos.com.br/we10",
+          "vf-golden-desodorante-cola-nia-75ml": "https://www.seguropagamentos.com.br/we11",
+          "vf-golden-desodorante-colonia-75ml": "https://www.seguropagamentos.com.br/we11",
+          "the-cream-loa-a-o-corporal-130-ml": "https://www.seguropagamentos.com.br/we12",
+          "the-cream-locao-corporal-130-ml": "https://www.seguropagamentos.com.br/we12",
+          "obsessed-gold-desodorante-cola-nia-100ml": "https://www.seguropagamentos.com.br/we13",
+          "obsessed-gold-desodorante-colonia-100ml": "https://www.seguropagamentos.com.br/we13",
+          "perfume-liberta-desodorante-cola-nia-100ml": "https://www.seguropagamentos.com.br/we14",
+          "liberta-exclusif-desodorante-cola-nia-100ml": "https://www.seguropagamentos.com.br/we14",
+          "perfume-liberte-desodorante-colonia-100ml": "https://www.seguropagamentos.com.br/we14",
+          "liberte-exclusif-desodorante-colonia-100ml": "https://www.seguropagamentos.com.br/we14",
+          "body-splash-desodorante-cola-nia-200ml": "https://www.seguropagamentos.com.br/we15",
+          "body-splash-desodorante-colonia-200ml": "https://www.seguropagamentos.com.br/we15",
+          "body-splash-the-rainy-desodorante-cola-nia-200ml": "https://www.seguropagamentos.com.br/we16",
+          "body-splash-the-rainy-desodorante-colonia-200ml": "https://www.seguropagamentos.com.br/we16",
+          // Cole seus links aqui (1 por produto):
+          // "kit-1-perfume-4-bodysplashes": "https://checkout...", // Kit 1 Perfume + 4 BodySplashes (R$ 79,90)
+          // "kit-5-body-splash-vanilla-edia-a-o-limitada-a-wepink": "https://checkout...", // Kit 5 Body Splash Vanilla Edição Limitada – Wepink (R$ 56,81)
+          // "kit-exclusivo-com-13-produtos-surpresas": "https://checkout...", // Kit Exclusivo com 13 Produtos Surpresas (R$ 109,90)
+          // "kit-obsessed-heaven-pra-black-friday": "https://checkout...", // Kit Obsessed + Heaven Pré Black Friday (R$ 73,00)
+          // "kit-obsessed-one-touch": "https://checkout...", // Kit Obsessed + One Touch (R$ 69,00)
+          // "kit-obsessed-fatal-rouge": "https://checkout...", // Kit Obsessed + Fatal Rouge (R$ 81,90)
+          // "obsessed-desodorante-cola-nia-100ml": "https://checkout...", // Obsessed Desodorante Colônia 100ml (R$ 91,90)
+          // "kit-the-sunny-vf-pink": "https://checkout...", // Kit The Sunny + VF Pink (R$ 93,00)
+          // "kit-the-sunny-the-lover": "https://checkout...", // Kit The Sunny + The Lover (R$ 93,00)
+          // "kit-the-sunny-perfect-pear": "https://checkout...", // Kit The Sunny + Perfect Pear (R$ 109,00)
+          // "kit-body-scrub-fatal-black-hydracare": "https://checkout...", // Kit Body Scrub + Fatal Black + HydraCare (R$ 91,83)
+          // "the-cream-loa-a-o-corporal-130-ml": "https://checkout...", // The Cream Loção Corporal 130 ml (R$ 37,00)
+          // "obsessed-gold-desodorante-cola-nia-100ml": "https://checkout...", // Obsessed Gold Desodorante Colônia 100ml (R$ 37,70)
+          // "perfume-liberta-desodorante-cola-nia-100ml": "https://checkout...", // Perfume Liberté Desodorante Colônia 100ml (R$ 67,00)
+          // "body-splash-desodorante-cola-nia-200ml": "https://checkout...", // Body Splash Desodorante Colônia 200ml (R$ 29,90)
+          // "body-splash-the-rainy-desodorante-cola-nia-200ml": "https://checkout...", // Body Splash The Rainy Desodorante Colônia 200ml (R$ 29,90)
+        };
+        const checkoutByPrice = {
+          // Se quiser mapear por preço (mais rápido), cole assim:
+          // "56,81": "https://checkout...", // Kit 5 Body Splash Vanilla...
+          // "79,90": "https://checkout...", // Kit 1 Perfume + 4 BodySplashes
+          // "91,83": "https://checkout...", // Kit Body Scrub + Fatal Black + HydraCare
+          //
+          // Atenção: preços repetidos (use `checkoutByPid` nesses casos):
+          // "29,90" aparece em 2 produtos (Body Splash 200ml / The Rainy 200ml)
+          // "93,00" aparece em 2 produtos (Kit The Sunny + VF Pink / The Lover)
+        };
+
+        const resolved = {
+          ...product,
+          title: overrideTitle ? overrideTitle : product.title,
+          price: overridePrice ? formatBRL(overridePrice) : formatBRL(product.price),
+          image: overrideImage ? overrideImage : product.image,
+        };
+
+        const normalizeUrl = (url) => (/^https?:\/\//i.test(url) ? url : `https://${url}`);
+        const slugify = (value) =>
+          String(value || "")
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/(^-|-$)/g, "");
+
+        const pidFromTitle = slugify(resolved.title);
+        const effectivePid = pid || pidFromTitle;
+
+        const paramCheckout = (params.get("checkout") || "").trim();
+        const resolvePidCheckout = () => {
+          for (const candidate of [pid, pidFromTitle]) {
+            if (candidate && checkoutByPid[candidate]) return checkoutByPid[candidate];
+          }
+          return "";
+        };
+        const resolvedCheckout =
+          (paramCheckout && paramCheckout !== placeholderCheckout ? paramCheckout : "") ||
+          resolvePidCheckout() ||
+          (resolved.price && checkoutByPrice[resolved.price] ? checkoutByPrice[resolved.price] : "") ||
+          placeholderCheckout;
+
+        // Conteúdo por produto (edite aqui por `pid`)
+        const contentByPid = {
+          "kit-1-perfume-4-bodysplashes": {
+            features: [
+              "Perfume feminino marcante e sofisticado",
+              "4 Body Splashes irresistíveis da linha Vanilla",
+              "Longa duração e fixação intensa",
+              "Fragrâncias únicas para cada ocasião",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Perfume Liberté",
+                  text:
+                    "um perfume feminino marcante com fragrância floral e amadeirada. Ideal para mulheres que buscam elegância e presença, com longa duração e fixação intensa na pele.",
+                },
+                {
+                  title: "Vanilla Dream",
+                  text:
+                    "uma fragrância doce e envolvente com notas de baunilha cremosa e toques florais. Perfeita para o dia a dia, deixando a pele perfumada por horas.",
+                },
+                {
+                  title: "Vanilla Love",
+                  text:
+                    "combina notas românticas de baunilha com flores brancas e um toque sutil de musk. Transmite feminilidade e sensualidade de forma leve e sofisticada.",
+                },
+                {
+                  title: "Vanilla Kiss",
+                  text:
+                    "uma explosão de doçura com baunilha, caramelo e frutas vermelhas. Fragrância jovem e vibrante, ideal para quem gosta de aromas marcantes e alegres.",
+                },
+                {
+                  title: "Vanilla Charm",
+                  text:
+                    "notas delicadas de baunilha com âmbar e sândalo criam uma fragrância acolhedora e sofisticada. Perfeita para momentos especiais e noites inesquecíveis.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Perfume Liberté",
+                  lines: ["Topo. Bergamota, Pêra, Groselha | Coração. Jasmim, Rosa, Peônia | Fundo. Sândalo, Musk, Patchouli"],
+                },
+                {
+                  title: "Body Splashes Vanilla",
+                  lines: [
+                    "Topo. Baunilha, Frutas Vermelhas, Caramelo | Coração. Flor de Laranjeira, Jasmim, Heliotrópio | Fundo. Âmbar, Sândalo, Musk Branco",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Perfume",
+                  text:
+                    "Aplique nos pontos de pulsação — pulsos, pescoço e atrás das orelhas. Para maior fixação, hidrate a pele antes da aplicação.",
+                },
+                {
+                  title: "Body Splash",
+                  text:
+                    "Borrife generosamente pelo corpo após o banho, com a pele ainda úmida. Pode reaplicar ao longo do dia para manter a fragrância.",
+                },
+              ],
+            },
+          },
+          "kit-5-body-splashes-vanilla": {
+            features: ["Qualidade incrível", "Pele incrivelmente perfumada", "Bem-estar prolongado", "Essências únicas e sofisticadas"],
+            tabs: {
+              description: [
+                {
+                  title: "Vanilla Cuddle",
+                  text:
+                    "celebra o conforto através de notas de baunilha suave e âmbar acolhedor, evoluindo em um coração macio com toques de algodão doce. Transmite carinho e doçura por onde passar.",
+                },
+                {
+                  title: "Vanilla Hope",
+                  text:
+                    "remete aos momentos alegres da vida, com toque refrescante de amêndoa e jasmim. Evolui em um coração vibrante de heliotrópio, finalizando em fundo doce e amadeirado.",
+                },
+                {
+                  title: "Vanilla Dream",
+                  text:
+                    "representa a felicidade dos momentos de carinho, com toque floral delicado de rosa e jasmim. Transmite serenidade e harmonia em um fundo doce e amadeirado.",
+                },
+                {
+                  title: "Vanilla Wish",
+                  text:
+                    "evoca os desejos do coração através de notas místicas de lavanda e violeta. Evolui com acordes de íris e flor de laranjeira, transmitindo esperança e delicadeza.",
+                },
+                {
+                  title: "Vanilla Hug",
+                  text:
+                    "desperta o poder feminino com toque frutado de ameixa e mandarina. Evolui em harmonia de jasmim e rosa damascena, transmitindo encanto e frescor por onde passar.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Vanilla Cuddle",
+                  lines: ["Topo: Baunilha Suave, Amêndoa | Coração: Algodão Doce, Heliotrópio | Fundo: Âmbar, Musk Branco"],
+                },
+                {
+                  title: "Vanilla Hope",
+                  lines: ["Topo: Amêndoa, Bergamota | Coração: Jasmim, Heliotrópio | Fundo: Sândalo, Baunilha"],
+                },
+                {
+                  title: "Vanilla Dream",
+                  lines: ["Topo: Rosa, Pêra | Coração: Jasmim, Peônia | Fundo: Baunilha, Sândalo"],
+                },
+                {
+                  title: "Vanilla Wish",
+                  lines: ["Topo: Lavanda, Violeta | Coração: Íris, Flor de Laranjeira | Fundo: Âmbar, Musk"],
+                },
+                {
+                  title: "Vanilla Hug",
+                  lines: ["Topo: Ameixa, Mandarina | Coração: Jasmim, Rosa Damascena | Fundo: Baunilha, Patchouli"],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Body Splash",
+                  text:
+                    "Borrife generosamente pelo corpo após o banho, com a pele ainda úmida. Pode reaplicar ao longo do dia para manter a fragrância.",
+                },
+                {
+                  title: "Dica",
+                  text:
+                    "Para maior fixação, hidrate a pele antes da aplicação e aplique nos pontos de pulsação — pulsos, pescoço e atrás das orelhas.",
+                },
+              ],
+            },
+          },
+          "kit-body-scrub-fatal-black-hydracare": {
+            features: [
+              "1 Perfume Fatal Black 100ml",
+              "1 Body Scrub Esfoliante Corporal 450g",
+              "1 Creme Facial HydraCare 60ml",
+              "Brinde Surpresa Especial",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Kit Fatal Black – Perfume, Esfoliante Corporal e Creme Facial",
+                  text:
+                    "Descubra uma experiência completa de cuidado e perfumação com o Kit Fatal Black. Um conjunto exclusivo que combina fragrância marcante, renovação da pele e hidratação profunda. Ideal para quem gosta de se sentir confiante, perfumada e com a pele sempre macia e bem cuidada.",
+                },
+                {
+                  title: "Sobre o kit",
+                  text:
+                    "O kit reúne produtos que se complementam perfeitamente: um perfume intenso e sedutor, um esfoliante corporal que renova a pele e um creme facial hidratante que ajuda a manter o rosto saudável e luminoso.",
+                },
+                {
+                  title: "Fatal Black For Her – Body Splash / Colônia (100ml)",
+                  text:
+                    "Perfume feminino com aroma sedutor e envolvente. A combinação de frutas vibrantes com flores elegantes e notas quentes cria uma fragrância sofisticada e marcante, ideal para usar à noite ou em ocasiões especiais.",
+                },
+                {
+                  title: "Body Scrub – Esfoliante Corporal (450g)",
+                  text:
+                    "Esfoliante corporal que remove células mortas e impurezas, ajudando a deixar a pele renovada, macia e com toque sedoso. Possui aroma agradável de frutas vermelhas e jasmim, proporcionando uma sensação refrescante durante o banho.",
+                },
+                {
+                  title: "HydraCare Essential – Creme Facial (60ml)",
+                  text:
+                    "Creme hidratante facial que proporciona hidratação profunda sem deixar a pele oleosa. Ajuda a manter o rosto macio, nutrido e com aparência saudável ao longo do dia.",
+                },
+                {
+                  title: "Conteúdo do Kit",
+                  text: "1 Perfume Fatal Black 100ml • 1 Body Scrub Esfoliante Corporal 450g • 1 Creme Facial HydraCare 60ml",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas olfativas – Fatal Black For Her",
+                  lines: [
+                    "Notas de Topo: Frutas Vermelhas, Mandarina, Bergamota",
+                    "Notas de Coração: Flor de Laranjeira, Ylang-Ylang, Jasmim, Rosa",
+                    "Notas de Fundo: Baunilha, Almíscar, Âmbar",
+                    "Uma fragrância doce, intensa e envolvente, perfeita para quem gosta de perfumes marcantes e sofisticados.",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Perfume",
+                  text:
+                    "Aplique nos pontos de pulsação — pulsos, pescoço e atrás das orelhas. Para maior fixação, hidrate a pele antes da aplicação.",
+                },
+                {
+                  title: "Esfoliante Corporal",
+                  text:
+                    "Aplique durante o banho com movimentos circulares na pele úmida. Enxágue bem. Use 2 a 3 vezes por semana para melhores resultados.",
+                },
+                {
+                  title: "Creme Facial",
+                  text:
+                    "Aplique uma pequena quantidade no rosto limpo, de manhã e à noite, com movimentos suaves até completa absorção.",
+                },
+              ],
+            },
+          },
+          "kit-body-scrub-fatal-black-hydracare-brinde": {
+            features: [
+              "1 Perfume Fatal Black 100ml",
+              "1 Body Scrub Esfoliante Corporal 450g",
+              "1 Creme Facial HydraCare 60ml",
+              "Brinde Surpresa Especial",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Kit Fatal Black – Perfume, Esfoliante Corporal e Creme Facial",
+                  text:
+                    "Descubra uma experiência completa de cuidado e perfumação com o Kit Fatal Black. Um conjunto exclusivo que combina fragrância marcante, renovação da pele e hidratação profunda. Ideal para quem gosta de se sentir confiante, perfumada e com a pele sempre macia e bem cuidada.",
+                },
+                {
+                  title: "Sobre o kit",
+                  text:
+                    "O kit reúne produtos que se complementam perfeitamente: um perfume intenso e sedutor, um esfoliante corporal que renova a pele e um creme facial hidratante que ajuda a manter o rosto saudável e luminoso.",
+                },
+                {
+                  title: "Fatal Black For Her – Body Splash / Colônia (100ml)",
+                  text:
+                    "Perfume feminino com aroma sedutor e envolvente. A combinação de frutas vibrantes com flores elegantes e notas quentes cria uma fragrância sofisticada e marcante, ideal para usar à noite ou em ocasiões especiais.",
+                },
+                {
+                  title: "Body Scrub – Esfoliante Corporal (450g)",
+                  text:
+                    "Esfoliante corporal que remove células mortas e impurezas, ajudando a deixar a pele renovada, macia e com toque sedoso. Possui aroma agradável de frutas vermelhas e jasmim, proporcionando uma sensação refrescante durante o banho.",
+                },
+                {
+                  title: "HydraCare Essential – Creme Facial (60ml)",
+                  text:
+                    "Creme hidratante facial que proporciona hidratação profunda sem deixar a pele oleosa. Ajuda a manter o rosto macio, nutrido e com aparência saudável ao longo do dia.",
+                },
+                {
+                  title: "Conteúdo do Kit",
+                  text: "1 Perfume Fatal Black 100ml • 1 Body Scrub Esfoliante Corporal 450g • 1 Creme Facial HydraCare 60ml",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas olfativas – Fatal Black For Her",
+                  lines: [
+                    "Notas de Topo: Frutas Vermelhas, Mandarina, Bergamota",
+                    "Notas de Coração: Flor de Laranjeira, Ylang-Ylang, Jasmim, Rosa",
+                    "Notas de Fundo: Baunilha, Almíscar, Âmbar",
+                    "Uma fragrância doce, intensa e envolvente, perfeita para quem gosta de perfumes marcantes e sofisticados.",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Perfume",
+                  text:
+                    "Aplique nos pontos de pulsação — pulsos, pescoço e atrás das orelhas. Para maior fixação, hidrate a pele antes da aplicação.",
+                },
+                {
+                  title: "Esfoliante Corporal",
+                  text:
+                    "Aplique durante o banho com movimentos circulares na pele úmida. Enxágue bem. Use 2 a 3 vezes por semana para melhores resultados.",
+                },
+                {
+                  title: "Creme Facial",
+                  text:
+                    "Aplique uma pequena quantidade no rosto limpo, de manhã e à noite, com movimentos suaves até completa absorção.",
+                },
+              ],
+            },
+          },
+          "kit-obsessed-heaven": {
+            features: [
+              "1 Perfume Obsessed com fragrância intensa e sedutor",
+              "1 Desodorante Colônia Heaven 100ml",
+              "Fragrâncias sofisticadas e duradouras",
+              "Kit completo para todas as ocasiões",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Perfume Obsessed",
+                  text:
+                    "um perfume feminino intenso e sedutor, com fragrância oriental e amadeirada. Ideal para mulheres que buscam presença e sofisticação, com longa duração e fixação marcante.",
+                },
+                {
+                  title: "Heaven Desodorante Colônia 100ml",
+                  text:
+                    "um convite a um universo delicado e alegre, em uma jornada sensorial capaz de transportar ao paraíso. Sua essência desperta uma sensação de felicidade através de um caminho olfativo floral, evoluindo com notas elegantes de mandarina e flor de laranjeira. A fragrância finaliza com um fundo doce e amadeirado, criando um aroma leve, envolvente e sofisticado.",
+                },
+                {
+                  title: "Características",
+                  text:
+                    "Caminho olfativo: Floral Frutado Amadeirado • Longa duração • Aroma marcante • Essência exclusiva • Fragrância elegante e envolvente",
+                },
+              ],
+              notes: [
+                {
+                  title: "Heaven – Notas Olfativas",
+                  lines: [
+                    "Notas de saída: Bergamota, mandarina e pêssego",
+                    "Notas de corpo: Flor de laranjeira, muguet e vetiver",
+                    "Notas de fundo: Musk, âmbar e baunilha",
+                  ],
+                },
+                {
+                  title: "Obsessed – Notas Olfativas",
+                  lines: [
+                    "Topo: Bergamota, Pêra, Groselha",
+                    "Coração: Jasmim, Rosa, Peônia",
+                    "Fundo: Sândalo, Musk, Patchouli",
+                  ],
+                },
+              ],
+              howTo: [
+                { title: "", text: "Aplique o perfume diretamente sobre a pele." },
+                {
+                  title: "",
+                  text: "Para melhor fixação, aplique em regiões como pescoço, pulsos, atrás das orelhas e dobra dos cotovelos.",
+                },
+                { title: "", text: "Reaplique ao longo do dia sempre que desejar renovar a fragrância." },
+              ],
+            },
+          },
+          "kit-obsessed-heaven-pra-black-friday": {
+            features: [
+              "1 Perfume Obsessed com fragrância intensa e sedutor",
+              "1 Desodorante Colônia Heaven 100ml",
+              "Fragrâncias sofisticadas e duradouras",
+              "Kit completo para todas as ocasiões",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Perfume Obsessed",
+                  text:
+                    "um perfume feminino intenso e sedutor, com fragrância oriental e amadeirada. Ideal para mulheres que buscam presença e sofisticação, com longa duração e fixação marcante.",
+                },
+                {
+                  title: "Heaven Desodorante Colônia 100ml",
+                  text:
+                    "um convite a um universo delicado e alegre, em uma jornada sensorial capaz de transportar ao paraíso. Sua essência desperta uma sensação de felicidade através de um caminho olfativo floral, evoluindo com notas elegantes de mandarina e flor de laranjeira. A fragrância finaliza com um fundo doce e amadeirado, criando um aroma leve, envolvente e sofisticado.",
+                },
+                {
+                  title: "Características",
+                  text:
+                    "Caminho olfativo: Floral Frutado Amadeirado • Longa duração • Aroma marcante • Essência exclusiva • Fragrância elegante e envolvente",
+                },
+              ],
+              notes: [
+                {
+                  title: "Heaven – Notas Olfativas",
+                  lines: [
+                    "Notas de saída: Bergamota, mandarina e pêssego",
+                    "Notas de corpo: Flor de laranjeira, muguet e vetiver",
+                    "Notas de fundo: Musk, âmbar e baunilha",
+                  ],
+                },
+                {
+                  title: "Obsessed – Notas Olfativas",
+                  lines: [
+                    "Topo: Bergamota, Pêra, Groselha",
+                    "Coração: Jasmim, Rosa, Peônia",
+                    "Fundo: Sândalo, Musk, Patchouli",
+                  ],
+                },
+              ],
+              howTo: [
+                { title: "", text: "Aplique o perfume diretamente sobre a pele." },
+                {
+                  title: "",
+                  text: "Para melhor fixação, aplique em regiões como pescoço, pulsos, atrás das orelhas e dobra dos cotovelos.",
+                },
+                { title: "", text: "Reaplique ao longo do dia sempre que desejar renovar a fragrância." },
+              ],
+            },
+          },
+          "kit-obsessed-one-touch": {
+            features: [
+              "1 Perfume Obsessed com fragrância intensa e sedutora",
+              "1 Perfume One Touch com aroma envolvente",
+              "Fragrâncias sofisticadas e duradouras",
+              "Kit completo para todas as ocasiões",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Perfume Obsessed",
+                  text:
+                    "Um perfume feminino intenso e sedutor, com fragrância oriental e amadeirada. Ideal para mulheres que buscam presença e sofisticação, com longa duração e fixação marcante.",
+                },
+                {
+                  title: "One Touch Desodorante Colônia",
+                  text:
+                    "Desenvolvido para pessoas que buscam conquistar seus objetivos e marcar presença por onde passam. Uma fragrância criada para transmitir força, autenticidade e poder, perfeita para momentos especiais e para quem vive intensamente sem medo de ser quem é.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua essência combina frutas selecionadas e um delicado mix de flores, criando uma fragrância envolvente e sofisticada. O fundo adocicado com patchouli e baunilha traz personalidade e um toque marcante que permanece na pele ao longo do dia.",
+                },
+                {
+                  title: "Características",
+                  text:
+                    "Caminho olfativo: Floriental • Fragrância marcante com toques cítricos • Longa durabilidade • Perfume sofisticado e envolvente • Sensação de feminilidade e força",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: frutas selecionadas e acordes frescos",
+                    "Notas de corpo: mix de flores elegantes",
+                    "Notas de fundo: patchouli e baunilha com fundo adocicado",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Modo de Usar",
+                  text:
+                    "Aplique diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text: "Se desejar uma perfumação mais intensa, reaplique ao longo do dia.",
+                },
+              ],
+            },
+          },
+          "kit-obsessed-fatal-rouge": {
+            features: [
+              "1 Perfume Obsessed com fragrância intensa e sedutora",
+              "1 Perfume Fatal Rouge com aroma envolvente",
+              "Fragrâncias sofisticadas e duradouras",
+              "Kit completo para todas as ocasiões",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Kit Obsessed + Fatal Rouge",
+                  text:
+                    "O Kit Obsessed + Fatal Rouge combina duas fragrâncias marcantes que entregam elegância, sensualidade e sofisticação. Um conjunto perfeito para quem gosta de perfumes envolventes que deixam presença por onde passam.",
+                },
+                {
+                  title: "",
+                  text:
+                    "A combinação das fragrâncias cria uma experiência completa de perfumação, equilibrando notas florais, frutadas e adocicadas que permanecem na pele por muito mais tempo.",
+                },
+                {
+                  title: "Obsessed",
+                  text:
+                    "Obsessed é uma fragrância envolvente e sofisticada, criada para quem gosta de marcar presença com um perfume leve, elegante e ao mesmo tempo marcante.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua composição combina notas frutadas e florais que trazem frescor logo na primeira aplicação, evoluindo para um fundo levemente adocicado que prolonga a sensação de perfume na pele.",
+                },
+                {
+                  title: "Fatal Rouge",
+                  text:
+                    "Fatal Rouge é uma fragrância criada para mulheres que gostam de marcar presença com elegância, mistério e intensidade. Um perfume envolvente que traduz a essência da mulher moderna: destemida, confiante e irresistível.",
+                },
+                {
+                  title: "",
+                  text:
+                    "A fragrância inicia com notas vibrantes de cassis, pimenta rosa e mandarina verde, trazendo um toque frutado e levemente picante. No coração aparecem flores sofisticadas como rosa damascena e pétalas de jasmim combinadas com frutas vermelhas. O fundo revela uma base quente e sedutora com sândalo, musk e creme de baunilha.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Obsessed — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes frutados e refrescantes",
+                    "Notas de corpo: flores delicadas e femininas",
+                    "Notas de fundo: notas doces e cremosas que ajudam na fixação da fragrância",
+                  ],
+                },
+                {
+                  title: "Fatal Rouge — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: cassis, pimenta rosa e mandarina verde",
+                    "Notas de corpo: rosa damascena, frutas vermelhas e pétalas de jasmim",
+                    "Notas de fundo: creme de baunilha, sândalo e musk",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique o perfume diretamente sobre a pele, principalmente nas regiões de maior circulação como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "3x-obsessed-desodorante-cola-nia-100ml": {
+            features: [
+              "Caminho olfativo: Floral Frutado",
+              "Fragrância elegante e envolvente",
+              "Perfume leve e marcante ao mesmo tempo",
+              "Sensação de frescor e feminilidade",
+              "Ideal para uso diário",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Obsessed Desodorante Colônia é uma fragrância envolvente e sofisticada, criada para quem gosta de marcar presença com elegância e personalidade. Um perfume moderno que combina frescor, feminilidade e um toque adocicado que se destaca na pele.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua composição traz uma combinação equilibrada de notas frutadas e florais que despertam os sentidos logo na primeira aplicação. Ao evoluir, a fragrância revela um fundo suave e cremoso que proporciona uma sensação agradável e duradoura.",
+                },
+                {
+                  title: "",
+                  text: "Ideal para quem busca um perfume versátil, perfeito tanto para o dia a dia quanto para ocasiões especiais.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes frutados e frescos",
+                    "Notas de corpo: flores delicadas e femininas",
+                    "Notas de fundo: notas doces e cremosas que ajudam na fixação da fragrância",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "3x-obsessed-desodorante-colonia-100ml": {
+            features: [
+              "Caminho olfativo: Floral Frutado",
+              "Fragrância elegante e envolvente",
+              "Perfume leve e marcante ao mesmo tempo",
+              "Sensação de frescor e feminilidade",
+              "Ideal para uso diário",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Obsessed Desodorante Colônia é uma fragrância envolvente e sofisticada, criada para quem gosta de marcar presença com elegância e personalidade. Um perfume moderno que combina frescor, feminilidade e um toque adocicado que se destaca na pele.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua composição traz uma combinação equilibrada de notas frutadas e florais que despertam os sentidos logo na primeira aplicação. Ao evoluir, a fragrância revela um fundo suave e cremoso que proporciona uma sensação agradável e duradoura.",
+                },
+                {
+                  title: "",
+                  text: "Ideal para quem busca um perfume versátil, perfeito tanto para o dia a dia quanto para ocasiões especiais.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes frutados e frescos",
+                    "Notas de corpo: flores delicadas e femininas",
+                    "Notas de fundo: notas doces e cremosas que ajudam na fixação da fragrância",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "kit-the-sunny-vf-pink": {
+            features: [
+              "Duas fragrâncias marcantes em um único kit",
+              "Combinação de frescor, feminilidade e sofisticação",
+              "The Sunny: aroma leve, luminoso e refrescante",
+              "VF Pink: toque intenso, doce e envolvente",
+              "Ideal para qualquer ocasião",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Kit The Sunny + VF Pink reúne duas fragrâncias marcantes que combinam frescor, feminilidade e sofisticação. Uma combinação perfeita para quem gosta de perfumes que deixam presença e elegância em qualquer ocasião.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Enquanto The Sunny traz um aroma mais leve, luminoso e refrescante, o VF Pink entrega um toque mais intenso, doce e envolvente. Juntos, criam uma experiência completa de perfumação.",
+                },
+                {
+                  title: "The Sunny",
+                  text:
+                    "The Sunny é uma fragrância vibrante e alegre que transmite leveza e energia. Seu aroma refrescante é perfeito para quem busca uma sensação de frescor e elegância durante todo o dia.",
+                },
+                {
+                  title: "VF Pink",
+                  text:
+                    "VF Pink é uma fragrância feminina e envolvente que combina doçura e sofisticação. Seu aroma marcante revela uma mistura equilibrada de frutas, flores e um fundo cremoso que permanece na pele.",
+                },
+              ],
+              notes: [
+                {
+                  title: "The Sunny — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes cítricos e frutados",
+                    "Notas de corpo: flores delicadas e luminosas",
+                    "Notas de fundo: notas suaves e levemente adocicadas",
+                  ],
+                },
+                {
+                  title: "VF Pink — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: frutas doces e acordes frescos",
+                    "Notas de corpo: flores elegantes e femininas",
+                    "Notas de fundo: baunilha, musk e notas amadeiradas suaves",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "kit-the-sunny-the-lover": {
+            features: [
+              "Duas fragrâncias marcantes em um único kit",
+              "Combinação de frescor, sensualidade e sofisticação",
+              "The Sunny: aroma leve, luminoso e refrescante",
+              "The Lover: toque intenso, doce e envolvente",
+              "Ideal para qualquer ocasião",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Kit The Sunny + The Lover reúne duas fragrâncias marcantes que combinam frescor, sensualidade e sofisticação. Um conjunto perfeito para quem gosta de perfumes versáteis que podem ser usados tanto no dia a dia quanto em momentos especiais.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Enquanto The Sunny traz uma fragrância leve e luminosa, que transmite frescor e energia, The Lover apresenta um aroma mais intenso e envolvente, com um toque doce e sofisticado que permanece na pele por muito mais tempo.",
+                },
+                {
+                  title: "",
+                  text: "A combinação dessas duas fragrâncias cria uma experiência completa de perfumação.",
+                },
+                {
+                  title: "The Sunny",
+                  text:
+                    "The Sunny é uma fragrância alegre e refrescante que transmite leveza e elegância. Seu aroma combina notas frescas e florais que despertam uma sensação de bem-estar e energia.",
+                },
+                {
+                  title: "The Lover",
+                  text:
+                    "The Lover é uma fragrância intensa e envolvente, criada para quem gosta de perfumes marcantes e sofisticados. Seu aroma combina notas doces e florais que revelam uma personalidade forte e sedutora.",
+                },
+              ],
+              notes: [
+                {
+                  title: "The Sunny — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes cítricos e frutados",
+                    "Notas de corpo: flores delicadas e luminosas",
+                    "Notas de fundo: notas suaves e levemente adocicadas",
+                  ],
+                },
+                {
+                  title: "The Lover — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: frutas doces e acordes frescos",
+                    "Notas de corpo: flores elegantes e femininas",
+                    "Notas de fundo: baunilha, musk e notas amadeiradas suaves",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "kit-the-sunny-perfect-pear": {
+            features: [
+              "Duas fragrâncias marcantes em um único kit",
+              "The Sunny: aroma alegre, refrescante e luminoso",
+              "Perfect Pear: essência leve, cítrica e frutada",
+              "Combinação de frescor, elegância e feminilidade",
+              "Ideal para qualquer ocasião",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Kit The Sunny + Perfect Pear reúne duas fragrâncias que combinam frescor, elegância e feminilidade. Um conjunto perfeito para quem gosta de perfumes versáteis que podem ser usados tanto no dia a dia quanto em momentos especiais.",
+                },
+                {
+                  title: "The Sunny",
+                  text:
+                    "The Sunny é uma fragrância alegre e refrescante que transmite leveza e elegância. Seu aroma combina notas frescas e florais que despertam uma sensação de bem-estar e energia.",
+                },
+                {
+                  title: "Perfect Pear",
+                  text:
+                    "Perfect Pear representa o clássico e delicado em fragrância, com uma essência leve e cítrica capaz de representar a força e sutileza feminina. Através de seu toque frutado em um mix de flores, ressignifica o estilo de vida natural e elegante, finalizando com notas olfativas de Patchouli e Âmbar.",
+                },
+              ],
+              notes: [
+                {
+                  title: "The Sunny — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes cítricos e frutados",
+                    "Notas de corpo: flores delicadas e luminosas",
+                    "Notas de fundo: notas suaves e levemente adocicadas",
+                  ],
+                },
+                {
+                  title: "Perfect Pear — Notas Olfativas",
+                  lines: [
+                    "Notas de saída: pera e notas cítricas frescas",
+                    "Notas de corpo: mix de flores delicadas",
+                    "Notas de fundo: Patchouli e Âmbar",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele. Se preferir, você pode aplicar em regiões mais específicas como: base do pescoço, cotovelos, punhos e atrás da orelha.",
+                },
+                {
+                  title: "",
+                  text: "Para uma melhor experiência, utilize a linha completa Wepink Perfect Pear.",
+                },
+                {
+                  title: "Precauções",
+                  text:
+                    "USO EXTERNO. Mantenha longe do alcance de crianças e animais. Em caso de irritação, suspenda o uso e consulte um médico. Não use caso tenha hipersensibilidade aos componentes da fórmula. Evite contato com os olhos, caso ocorra, enxágue abundantemente. Não aplicar caso a pele esteja irritada ou lesionada. Não aplicar na região das mucosas. Armazene em local fresco, ao abrigo da luz e calor excessivo.",
+                },
+              ],
+            },
+          },
+          "vf-golden-desodorante-cola-nia-75ml": {
+            features: [
+              "Caminho olfativo: Oriental Floral",
+              "Notas de saída: bergamota fresca e delicada",
+              "Coração floral: peônia e jasmim sambac",
+              "Fundo doce e amadeirado envolvente",
+              "Fragrância vibrante e encantadora",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "",
+                  text: "Edite este conteúdo por produto em contentByPid[pid].tabs.description (opcional).",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: bergamota fresca e delicada",
+                    "Notas de corpo: peônia e jasmim sambac em um coração floral inesquecível",
+                    "Notas de fundo: fundo doce e amadeirado, revelando beleza exclusiva e poderosa",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele. Se preferir, você pode aplicar em regiões mais específicas como: base do pescoço, cotovelos, punhos e atrás da orelha.",
+                },
+                {
+                  title: "",
+                  text: "Para uma melhor experiência, utilize a linha completa VF Golden.",
+                },
+              ],
+            },
+          },
+          "vf-golden-desodorante-colonia-75ml": {
+            features: [
+              "Caminho olfativo: Oriental Floral",
+              "Notas de saída: bergamota fresca e delicada",
+              "Coração floral: peônia e jasmim sambac",
+              "Fundo doce e amadeirado envolvente",
+              "Fragrância vibrante e encantadora",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Desodorante Colônia VF Golden celebra a essência extraordinária dos momentos mais felizes, em uma fragrância vibrante e encantadora aos sentidos.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua fragrância oriental inicia com a alegria e delicadeza da bergamota, mesclando elegância nas notas festivas de peônia e jasmim sambac. Evolui em um coração floral inesquecível e finaliza em um fundo doce e amadeirado, revelando uma beleza exclusiva e poderosa.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: bergamota fresca e delicada",
+                    "Notas de corpo: peônia e jasmim sambac em um coração floral inesquecível",
+                    "Notas de fundo: fundo doce e amadeirado, revelando beleza exclusiva e poderosa",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele. Se preferir, você pode aplicar em regiões mais específicas como: base do pescoço, cotovelos, punhos e atrás da orelha.",
+                },
+                {
+                  title: "",
+                  text: "Para uma melhor experiência, utilize a linha completa VF Golden.",
+                },
+              ],
+            },
+          },
+          "the-cream-loa-a-o-corporal-130-ml": {
+            features: [
+              "Hidratação profunda e duradoura",
+              "Textura leve e fácil de espalhar",
+              "Rápida absorção",
+              "Deixa a pele macia e perfumada",
+              "Ideal para uso diário",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "A The Cream Loção Corporal foi desenvolvida para proporcionar hidratação intensa e deixar a pele macia, perfumada e com toque sedoso durante todo o dia.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua fórmula possui textura leve e de rápida absorção, hidratando profundamente sem deixar sensação oleosa. Ideal para quem deseja manter a pele nutrida, suave e com uma fragrância delicada.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Perfeita para uso diário, a loção corporal ajuda a manter a pele hidratada e com aspecto saudável.",
+                },
+                
+                
+             
+              ],
+              notesLabel: "Benefícios",
+              notes: [
+                {
+                  title: "Benefícios",
+                  lines: [
+                    "&#10003; Hidratação profunda e duradoura",
+                    "&#10003; Hidratação profunda e duradoura",
+                    "&#10003; Rapida absorçao",
+                    "&#10003; Deixa a pele macia e perfumada",
+                    "&#10003; Ideal para uso diário",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text: "Aplique a loção corporal sobre a pele limpa e seca.",
+                },
+                {
+                  title: "",
+                  text: "Espalhe suavemente pelo corpo até completa absorção.",
+                },
+                {
+                  title: "",
+                  text: "Pode ser utilizada diariamente ou sempre que desejar manter a pele hidratada e perfumada.",
+                },
+              ],
+            },
+          },
+          "the-cream-locao-corporal-130-ml": {
+            features: [
+              "Hidratação profunda e duradoura",
+              "Textura leve e fácil de espalhar",
+              "Rápida absorção",
+              "Deixa a pele macia e perfumada",
+              "Ideal para uso diário",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "A The Cream Loção Corporal foi desenvolvida para proporcionar hidratação intensa e deixar a pele macia, perfumada e com toque sedoso durante todo o dia.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua fórmula possui textura leve e de rápida absorção, hidratando profundamente sem deixar sensação oleosa. Ideal para quem deseja manter a pele nutrida, suave e com uma fragrância delicada.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Perfeita para uso diário, a loção corporal ajuda a manter a pele hidratada e com aspecto saudável.",
+                },
+              
+              ],
+              notesLabel: "Benefícios",
+              notes: [
+                {
+                  title: "Benefícios",
+                  lines: [
+                    "&#10003; Hidratação profunda e duradoura",
+                    "&#10003; Textura leve e facil de espalhar",
+                    "&#10003; Rápida absorção",
+                    "&#10003; Deixa a pele macia e perfumada",
+                    "&#10003; Ideal para uso diário",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text: "Aplique a loção corporal sobre a pele limpa e seca.",
+                },
+                {
+                  title: "",
+                  text: "Espalhe suavemente pelo corpo até completa absorção.",
+                },
+                {
+                  title: "",
+                  text: "Pode ser utilizada diariamente ou sempre que desejar manter a pele hidratada e perfumada.",
+                },
+              ],
+            },
+          },
+          "obsessed-gold-desodorante-cola-nia-100ml": {
+            features: [
+              "Caminho olfativo: Floral Frutado",
+              "Fragrância elegante e marcante",
+              "Aroma envolvente e sofisticado",
+              "Sensação de frescor e feminilidade",
+              "Perfume ideal para uso diário",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Obsessed Gold Desodorante Colônia é uma fragrância sofisticada e envolvente, criada para quem gosta de perfumes elegantes que marcam presença de forma equilibrada e refinada.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Seu aroma combina notas frescas e florais que se destacam logo na primeira aplicação, evoluindo para um fundo levemente adocicado e cremoso que prolonga a sensação de perfume na pele.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Ideal para quem busca uma fragrância versátil, perfeita tanto para o dia a dia quanto para ocasiões especiais.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes frutados e refrescantes",
+                    "Notas de corpo: flores delicadas e femininas",
+                    "Notas de fundo: notas doces e cremosas que ajudam na fixação da fragrância",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique o perfume diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "obsessed-gold-desodorante-colonia-100ml": {
+            features: [
+              "Caminho olfativo: Floral Frutado",
+              "Fragrância elegante e marcante",
+              "Aroma envolvente e sofisticado",
+              "Sensação de frescor e feminilidade",
+              "Perfume ideal para uso diário",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Obsessed Gold Desodorante Colônia é uma fragrância sofisticada e envolvente, criada para quem gosta de perfumes elegantes que marcam presença de forma equilibrada e refinada.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Seu aroma combina notas frescas e florais que se destacam logo na primeira aplicação, evoluindo para um fundo levemente adocicado e cremoso que prolonga a sensação de perfume na pele.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Ideal para quem busca uma fragrância versátil, perfeita tanto para o dia a dia quanto para ocasiões especiais.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: acordes frutados e refrescantes",
+                    "Notas de corpo: flores delicadas e femininas",
+                    "Notas de fundo: notas doces e cremosas que ajudam na fixação da fragrância",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique o perfume diretamente sobre a pele nas regiões como pescoço, pulsos e atrás das orelhas.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Para uma perfumação mais intensa e duradoura, reaplique ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+              ],
+            },
+          },
+          "body-splash-desodorante-colonia-200ml": {
+            features: [
+              "Caminho olfativo: Floral Frutado",
+              "Essência única e sofisticada",
+              "Qualidade incrível",
+              "Longa duração",
+              "Pele incrivelmente perfumada",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Desodorante Colônia Body Splash Wepink Fatal Rouge aprecia a essência de uma mulher destemida e fatal.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua fragrância envolvente se destaca por seu toque floral irresistível, repleto de notas intensas de cassis, mandarina verde e pimenta rosa, em um contraste perfeito.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Evolui em notas encantadoras de rosa damascena e pétalas de jasmim, finalizando com autenticidade em um fundo doce e amadeirado.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: Cassis, Pimenta Rosa e Mandarina Verde.",
+                    "Notas de corpo: Rosa Damascena, Frutas Vermelhas e Pétalas de Jasmim.",
+                    "Notas de fundo: Creme de Baunilha, Sândalo e Musk.",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Body Splash: borrife generosamente pelo corpo após o banho, com a pele ainda úmida.",
+                },
+                {
+                  title: "",
+                  text: "Pode reaplicar ao longo do dia sempre que desejar renovar a fragrância.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Dica: para maior fixação, hidrate a pele antes da aplicação e aplique também nos pontos de pulsação — pulsos, pescoço e atrás das orelhas.",
+                },
+              ],
+            },
+          },
+          "body-splash-the-rainy-desodorante-colonia-200ml": {
+            features: [
+              "Caminho olfativo: Oriental Amadeirado",
+              "Essência única e sofisticada",
+              "Qualidade incrível",
+              "Longa duração",
+              "Essência leve e refrescante",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Desodorante Colônia Body Splash Wepink The Rainy possui a essência mais suave e refrescante, como o leve aroma de gotas de chuva.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Sua jornada sensorial transborda um caminho floral único, unido ao encanto das notas de lavanda e canela.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Evolui em um toque delicado de jasmim, finalizando em um fundo doce, amadeirado e alegre — uma fragrância perfeita para todos os momentos.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: [
+                    "Notas de saída: Bergamota, Tagete e Canela.",
+                    "Notas de corpo: Jasmim, Peônia, Cravo e Lavanda.",
+                    "Notas de fundo: Baunilha, Musk, Sândalo e Âmbar.",
+                  ],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Body Splash: borrife generosamente pelo corpo após o banho, com a pele ainda úmida.",
+                },
+                {
+                  title: "",
+                  text: "Pode reaplicar ao longo do dia para manter a fragrância.",
+                },
+                {
+                  title: "",
+                  text:
+                    "Dica: para maior fixação, hidrate a pele antes da aplicação e aplique também nos pontos de pulsação — pulsos, pescoço e atrás das orelhas.",
+                },
+              ],
+            },
+          },
+          // Exemplo:
+          // "obsessed-gold-desodorante-cola-nia-100ml": {
+          //   features: ["Fixação prolongada", "Fragrância elegante", "Perfeito para o dia a dia"],
+          //   description: [
+          //     "Descrição do produto Obsessed Gold...",
+          //     "Mais detalhes, modo de uso e benefícios.",
+          //   ],
+          //   faq: [
+          //     { q: "Em quanto tempo chega?", a: "Prazo médio de X dias úteis (varia por região)." },
+          //     { q: "Tem garantia?", a: "Sim, garantia de X dias." },
+          //   ],
+          // },
+        };
+
+        // Aliases de conteúdo para variações de pid geradas pelo título no index.html
+        if (contentByPid["kit-5-body-splashes-vanilla"]) {
+          contentByPid["kit-5-body-splash-vanilla-edicao-limitada"] = contentByPid["kit-5-body-splashes-vanilla"];
+          contentByPid["kit-5-body-splash-vanilla-edicao-limitada-wepink"] = contentByPid["kit-5-body-splashes-vanilla"];
+          contentByPid["kit-5-body-splash-vanilla-edia-a-o-limitada-a-wepink"] = contentByPid["kit-5-body-splashes-vanilla"];
+        }
+        if (contentByPid["body-splash-desodorante-colonia-200ml"]) {
+          contentByPid["body-splash-desodorante-cola-nia-200ml"] = contentByPid["body-splash-desodorante-colonia-200ml"];
+        }
+        if (contentByPid["body-splash-the-rainy-desodorante-colonia-200ml"]) {
+          contentByPid["body-splash-the-rainy-desodorante-cola-nia-200ml"] =
+            contentByPid["body-splash-the-rainy-desodorante-colonia-200ml"];
+        }
+
+        if (!contentByPid["liberta-exclusif-desodorante-cola-nia-100ml"]) {
+          const liberteExclusif = {
+            features: [
+              "Notas de saída: frescor da pera e da lichia",
+              "Coração floral com toque de incenso elegante",
+              "Fundo valioso de âmbar e baunilha",
+              "Nuances suaves de um verdadeiro elixir floral",
+              "Fragrância única e envolvente",
+            ],
+            tabs: {
+              description: [
+                {
+                  title: "Descrição",
+                  text:
+                    "O Liberté Exclusif Desodorante Colônia traz nuances suaves de um verdadeiro elixir floral: um frescor frutado na saída, um coração floral com um toque elegante de incenso e um fundo valioso de âmbar e baunilha.",
+                },
+                {
+                  title: "",
+                  text: "Uma fragrância única e envolvente para quem busca elegância e presença no dia a dia.",
+                },
+              ],
+              notes: [
+                {
+                  title: "Notas Olfativas",
+                  lines: ["Notas de saída: pera e lichia", "Coração: floral com toque de incenso", "Fundo: âmbar e baunilha"],
+                },
+              ],
+              howTo: [
+                {
+                  title: "Como usar",
+                  text:
+                    "Aplique diretamente sobre a pele, preferencialmente em pontos de pulsação como pescoço, punhos e atrás das orelhas.",
+                },
+                { title: "", text: "Reaplique ao longo do dia sempre que desejar renovar a fragrância." },
+              ],
+            },
+          };
+          contentByPid["liberta-exclusif-desodorante-cola-nia-100ml"] = liberteExclusif;
+          contentByPid["liberte-exclusif-desodorante-colonia-100ml"] = liberteExclusif;
+        }
+
+        const content = contentByPid[effectivePid] || contentByPid[pidFromTitle] || contentByPid[pid] || {};
+        const finalFeatures = Array.isArray(content.features) ? content.features : resolved.features;
+        const finalDescription = Array.isArray(content.description) ? content.description : resolved.description;
+
+        document.title = `${resolved.title} - Quiosques Pink`;
+        byId("productTitle").textContent = resolved.title;
+        byId("productPriceSticky").textContent = resolved.price;
+
+        const img = byId("productImage");
+        img.referrerPolicy = "no-referrer";
+        img.src = resolved.image;
+        img.alt = resolved.title;
+
+        if (Array.isArray(finalFeatures) && finalFeatures.length) {
+          byId("featureList").innerHTML = finalFeatures.map((t) => `<li>${t}</li>`).join("");
+        }
+
+        const productDescEl = byId("productDescription");
+        if (productDescEl) {
+          const tabsConfig = content.tabs || {};
+          const tabLabelDesc = tabsConfig.descLabel || "Descrição";
+          const tabLabelNotes = tabsConfig.notesLabel || "Notas";
+          const tabLabelHowTo = tabsConfig.howtoLabel || "Como usar";
+
+          productDescEl.innerHTML = `
+            <div class="tabs" id="productTabs">
+              <div class="tabs-nav" role="tablist" aria-label="Detalhes do produto">
+                <button type="button" class="is-active" role="tab" aria-selected="true" aria-controls="tab-desc" id="tab-desc-btn">${tabLabelDesc}</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-notes" id="tab-notes-btn">${tabLabelNotes}</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="tab-howto" id="tab-howto-btn">${tabLabelHowTo}</button>
+              </div>
+
+              <div class="tabs-panel" role="tabpanel" id="tab-desc" aria-labelledby="tab-desc-btn">
+                <div id="tabDesc"></div>
+              </div>
+              <div class="tabs-panel" role="tabpanel" id="tab-notes" aria-labelledby="tab-notes-btn" hidden>
+                <div id="tabNotes"></div>
+              </div>
+              <div class="tabs-panel" role="tabpanel" id="tab-howto" aria-labelledby="tab-howto-btn" hidden>
+                <div id="tabHowTo"></div>
+              </div>
+            </div>
+          `;
+
+          const tabs = content.tabs || {};
+          const descItems =
+            Array.isArray(tabs.description) && tabs.description.length
+              ? tabs.description
+              : (Array.isArray(finalDescription) ? finalDescription.map((t) => ({ title: "", text: t })) : []);
+          const notesBlocks = Array.isArray(tabs.notes) ? tabs.notes : [];
+          const howToItems = Array.isArray(tabs.howTo) ? tabs.howTo : [];
+
+          const tabDescEl = byId("tabDesc");
+          if (tabDescEl) {
+            tabDescEl.innerHTML = (descItems.length ? descItems : [{ title: "", text: "Edite este conteúdo por produto em contentByPid[pid].tabs.description." }])
+              .map((item) => {
+                const title = (item.title || "").trim();
+                const text = (item.text || "").trim();
+                if (!title) return `<div class="tab-item"><p>${text}</p></div>`;
+                return `<div class="tab-item"><strong>${title}:</strong><p>${text}</p></div>`;
+              })
+              .join("");
+          }
+
+          const tabNotesEl = byId("tabNotes");
+          if (tabNotesEl) {
+            tabNotesEl.innerHTML = (notesBlocks.length ? notesBlocks : [{ title: "Notas", lines: ["Edite este conteúdo por produto em contentByPid[pid].tabs.notes."] }])
+              .map((b) => {
+                const lines = Array.isArray(b.lines) ? b.lines : [];
+                return `<div class="tab-block"><h4>${b.title || ""}</h4>${lines.map((l) => `<div class="line">${l}</div>`).join("")}</div>`;
+              })
+              .join("");
+          }
+
+          const tabHowToEl = byId("tabHowTo");
+          if (tabHowToEl) {
+            tabHowToEl.innerHTML = (howToItems.length ? howToItems : [{ title: "Como usar", text: "Edite este conteúdo por produto em contentByPid[pid].tabs.howTo." }])
+              .map((item) => {
+                const title = (item.title || "").trim();
+                const text = (item.text || "").trim();
+                if (!title) return `<div class="tab-item"><p>${text}</p></div>`;
+                return `<div class="tab-item"><strong>${title}:</strong><p>${text}</p></div>`;
+              })
+              .join("");
+          }
+
+          const tabButtons = [
+            { btn: byId("tab-desc-btn"), panel: byId("tab-desc") },
+            { btn: byId("tab-notes-btn"), panel: byId("tab-notes") },
+            { btn: byId("tab-howto-btn"), panel: byId("tab-howto") },
+          ];
+
+          const setActiveTab = (index) => {
+            tabButtons.forEach((t, i) => {
+              if (!t.btn || !t.panel) return;
+              const active = i === index;
+              t.btn.classList.toggle("is-active", active);
+              t.btn.setAttribute("aria-selected", active ? "true" : "false");
+              t.panel.toggleAttribute("hidden", !active);
+            });
+          };
+
+          tabButtons.forEach((t, i) => {
+            if (!t.btn) return;
+            t.btn.addEventListener("click", () => setActiveTab(i));
+          });
+        }
+
+        const comboSection = byId("comboSection");
+        const combo = resolved.comboDeal || (params.get("promo") === "relampago" ? catalog.relampago.comboDeal : null);
+
+        if (combo) {
+          comboSection.style.display = "";
+          byId("comboHeadline").textContent = combo.headline || "Oferta especial";
+          byId("flashDealPrice").textContent = formatBRL(combo.totalPrice);
+
+          const items = combo.items || [];
+          if (items[0]) {
+            byId("comboName0").textContent = items[0].title || byId("comboName0").textContent;
+            byId("comboFrom0").textContent = `R$ ${formatBRL(items[0].fromPrice)}`;
+            byId("comboImg0").src = items[0].image || byId("comboImg0").src;
+            byId("comboImg0").alt = items[0].title || "";
+          }
+          if (items[1]) {
+            byId("comboName1").textContent = items[1].title || byId("comboName1").textContent;
+            byId("comboFrom1").textContent = `R$ ${formatBRL(items[1].fromPrice)}`;
+            byId("comboImg1").src = items[1].image || byId("comboImg1").src;
+            byId("comboImg1").alt = items[1].title || "";
+          }
+        }
+
+        const setSelectedCombo = (index) => {
+          const cards = Array.from(document.querySelectorAll(".combo-card"));
+          cards.forEach((card) => {
+            const isSelected = String(card.getAttribute("data-combo")) === String(index);
+            card.classList.toggle("is-selected", isSelected);
+            card.setAttribute("aria-pressed", isSelected ? "true" : "false");
+          });
+        };
+
+        document.querySelectorAll(".combo-card").forEach((card) => {
+          const activate = () => setSelectedCombo(card.getAttribute("data-combo"));
+          card.addEventListener("click", activate);
+          card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              activate();
+            }
+          });
+        });
+
+        const flashCheckoutByPrice = {
+          "94,89": "https://www.seguropagamentos.com.br/wkit1",
+          "89,90": "https://www.seguropagamentos.com.br/wkit2",
+        };
+
+        const resolveFlashCheckout = () => {
+          const raw = (byId("flashDealPrice")?.textContent || "").trim();
+          const price = formatBRL(raw);
+          return flashCheckoutByPrice[price] || "";
+        };
+
+        const onBuy = ({ isFlashDeal } = { isFlashDeal: false }) => {
+          const payload = {
+            productKey,
+            pid: effectivePid,
+            title: resolved.title,
+            price: resolved.price,
+            isFlashDeal,
+            href: window.location.href,
+            ts: Date.now(),
+          };
+          try {
+            localStorage.setItem("selected_product", JSON.stringify(payload));
+          } catch (e) {}
+
+          const flash = isFlashDeal ? resolveFlashCheckout() : "";
+          const target = normalizeUrl(flash || resolvedCheckout);
+          window.location.href = target;
+        };
+
+        byId("buyButtonTop").addEventListener("click", () => onBuy({ isFlashDeal: false }));
+        byId("buyButtonSticky").addEventListener("click", () => onBuy({ isFlashDeal: false }));
+        const flashBtn = byId("flashDealButton");
+        if (flashBtn) flashBtn.addEventListener("click", () => onBuy({ isFlashDeal: true }));
+
+        const recentReviews = [
+          {
+            text:
+              "O Obsessed é simplesmente maravilhoso! Leve, elegante e perfeito pro dia a dia. Recebo elogios toda vez que uso, as pessoas sempre perguntam qual perfume é.",
+            author: "Camila S.",
+            date: "02/03/2026",
+          },
+          {
+            text:
+              "A fixação surpreende demais! Passo de manhã e à noite ainda sinto o perfume na pele. É suave mas muito sofisticado, perfeito pra quem gosta de fragrâncias florais.",
+            author: "Juliana M.",
+            date: "25/02/2026",
+          },
+          {
+            text:
+              "Comprei o Obsessed e já virou meu perfume favorito. Tem um frescor delicioso e ao mesmo tempo é marcante. Todo mundo no trabalho pergunta qual é!",
+            author: "Fernanda L.",
+            date: "18/02/2026",
+          },
+          {
+            text:
+              "Presenteei minha mãe com o Obsessed e ela amou! A fragrância é envolvente e feminina. A embalagem chegou perfeita e bem protegida, super recomendo.",
+            author: "Beatriz A.",
+            date: "10/02/2026",
+          },
+          {
+            text:
+              "Que perfume incrível! As notas florais e frutadas combinam perfeitamente. É versátil, uso tanto no dia a dia quanto em ocasiões especiais. Vale cada centavo!",
+            author: "Mariana R.",
+            date: "01/02/2026",
+          },
+          {
+            text:
+              "Já é o segundo frasco que compro. A qualidade da fragrância é impressionante e o preço é muito justo. Virou meu perfume do dia a dia, não troco por nada!",
+            author: "Larissa P.",
+            date: "20/01/2026",
+          },
+        ];
+
+        const reviewsEl = byId("recentReviews");
+        if (reviewsEl) {
+          reviewsEl.innerHTML = recentReviews
+            .map(
+              (r) => `
+                <div class="review-item">
+                  <div class="review-text">${r.text}</div>
+                  <div class="review-recommend">😊 Sim, eu recomendo este produto</div>
+                  <div class="review-meta">${r.author} &nbsp;${r.date}</div>
+                </div>
+              `
+            )
+            .join("");
+        }
+
+        // Contagem regressiva (padrão: 20 minutos a partir do carregamento)
+        const endsParam = params.get("ends"); // ISO string opcional
+        const endsAt = endsParam ? new Date(endsParam).getTime() : Date.now() + 20 * 60 * 1000;
+
+        const timerEls = {
+          hours: document.querySelector('[data-timer="hours"]'),
+          minutes: document.querySelector('[data-timer="minutes"]'),
+          seconds: document.querySelector('[data-timer="seconds"]'),
+        };
+
+        const pad2 = (n) => String(Math.max(0, n)).padStart(2, "0");
+
+        const tick = () => {
+          const diff = Math.max(0, endsAt - Date.now());
+          const totalSeconds = Math.floor(diff / 1000);
+          const h = Math.floor(totalSeconds / 3600);
+          const m = Math.floor((totalSeconds % 3600) / 60);
+          const s = totalSeconds % 60;
+          if (timerEls.hours) timerEls.hours.textContent = pad2(h);
+          if (timerEls.minutes) timerEls.minutes.textContent = pad2(m);
+          if (timerEls.seconds) timerEls.seconds.textContent = pad2(s);
+        };
+
+        tick();
+        setInterval(tick, 250);
+
+        // Prova social (pessoas vendo)
+        const viewingEl = byId("viewingCount");
+        const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+        const setViewing = () => {
+          const base = params.get("view") ? Number(params.get("view")) : randomInt(38, 79);
+          const jitter = randomInt(-3, 4);
+          const value = Math.max(12, base + jitter);
+          viewingEl.textContent = String(value);
+        };
+        setViewing();
+        setInterval(setViewing, 4500);
+
+      })();
+    </script>
+  </body>
+</html>
+
